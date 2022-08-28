@@ -23,7 +23,6 @@ specifiers:
   stylelint-config-recess-order: ^3.0.0
   stylelint-config-standard: ^28.0.0
   stylelint-config-standard-scss: ^5.0.0
-  ts-node: ^10.9.1
   typescript: ^4.6.4
   unocss: ^0.45.13
   vite: 3.0.9
@@ -53,7 +52,6 @@ devDependencies:
   stylelint-config-recess-order: registry.npmmirror.com/stylelint-config-recess-order/3.0.0_stylelint@14.11.0
   stylelint-config-standard: registry.npmmirror.com/stylelint-config-standard/28.0.0_stylelint@14.11.0
   stylelint-config-standard-scss: registry.npmmirror.com/stylelint-config-standard-scss/5.0.0_74u2qasxp5mudia6vln5kcfuni
-  ts-node: registry.npmmirror.com/ts-node/10.9.1_ys5ibmf2vqsgufkwyky27zwkd4
   typescript: registry.npmmirror.com/typescript/4.8.2
   unocss: registry.npmmirror.com/unocss/0.45.13_vite@3.0.9
   vite: registry.npmmirror.com/vite/3.0.9
