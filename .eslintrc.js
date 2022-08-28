@@ -5,36 +5,20 @@ module.exports = {
     node: true,
   },
   extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react-hooks/recommended",
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    '@antfu/eslint-config-ts',
   ],
-  parser: "@typescript-eslint/parser",
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: "latest",
-    sourceType: "module",
-  },
-  plugins: ["react", "react-hooks", "@typescript-eslint", "simple-import-sort"],
+  plugins: ['react', 'react-hooks', 'simple-import-sort'],
   rules: {
-    indent: ["error", 2],
-    "linebreak-style": ["error", "unix"],
-    quotes: ["error", "double"],
-    semi: ["error", "always"],
-    "react/react-in-jsx-scope": ["off"],
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "@typescript-eslint/no-explicit-any": ["off"],
-    "@typescript-eslint/ban-ts-comment": ["off"],
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'jsx-quotes': ['error', 'prefer-double'],
+    'react/react-in-jsx-scope': 'off',
   },
   settings: {
     react: {
-      version: "detect",
+      version: 'detect',
     },
   },
-};
+}

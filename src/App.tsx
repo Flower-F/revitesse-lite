@@ -1,30 +1,26 @@
-import "./App.css";
-
-import { useState } from "react";
-
-import reactLogo from "./assets/react.svg";
-
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <>
+      <div h-full text-center display-flex select-none transition-all-400>
+        <div m-auto>
+          <div text-5xl font-thin animate-bounce-alt animate-count-infinite animate-duration-1s>unocss</div>
+          <div op-30 text-lg font-light m-1>The instant on-demand Atomic CSS engine.</div>
+          <div m-2 display-flex justify-center text-2xl op-30 hover-op-80>
+            <a
+              i-carbon-logo-github
+              text-inherit
+              href="https://github.com/unocss/unocss"
+              target="_blank"
+              rel="noreferrer"
+            ></a>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-        <p>Edit <code>src/App.tsx</code> and save to test HMR</p>
+      <div position-absolute bottom-5 right-0 left-0 text-center op-30 font-light>
+        on-demand · instant · fully customizable
       </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App

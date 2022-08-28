@@ -1,5 +1,7 @@
 {
   "recommendations": [
-    "rome.rome"
+    "antfu.unocss",
+    "dbaeumer.vscode-eslint",
+    "antfu.iconify"
   ]
 }

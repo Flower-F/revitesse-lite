@@ -3,5 +3,5 @@
 - react
 - vite
 - unocss
-- eslint + stylelint + rome
+- eslint + stylelint
 - husky + lint-staged
