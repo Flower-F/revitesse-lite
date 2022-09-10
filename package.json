@@ -2,6 +2,7 @@
   "name": "revitesse-lite",
   "private": true,
   "version": "0.0.1",
+  "packageManager": "pnpm@7.11.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
