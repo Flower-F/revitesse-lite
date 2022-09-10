@@ -30,3 +30,6 @@ dist-ssr
 
 # UnoCSS
 __unconfig_vite.config.ts
+
+# Vitest
+coverage

@@ -10,7 +10,9 @@
     "stylelint": "stylelint --fix --cache src/**/*.{scss,css}",
     "lint": "pnpm eslint && pnpm stylelint",
     "prepare": "husky install",
-    "test": "vitest"
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "typecheck": "tsc"
   },
   "dependencies": {
     "ahooks": "^3.7.1",
@@ -29,7 +31,9 @@
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.35.1",
     "@unocss/preset-attributify": "^0.45.18",
+    "@unocss/reset": "^0.45.18",
     "@vitejs/plugin-react": "^2.0.1",
+    "@vitest/coverage-c8": "^0.23.2",
     "commitlint": "^17.1.1",
     "eslint": "^8.23.0",
     "eslint-define-config": "^1.7.0",
