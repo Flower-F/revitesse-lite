@@ -8,7 +8,9 @@
     "preview": "vite preview",
     "eslint": "eslint --ext .js,.jsx,.ts,.tsx --cache --fix --quiet ./",
     "stylelint": "stylelint --fix --cache src/**/*.{scss,css}",
-    "prepare": "husky install"
+    "lint": "pnpm eslint && pnpm stylelint",
+    "prepare": "husky install",
+    "test": "vitest"
   },
   "dependencies": {
     "ahooks": "^3.7.1",
@@ -21,6 +23,7 @@
     "@commitlint/cli": "^17.1.1",
     "@commitlint/config-conventional": "^17.1.0",
     "@iconify-json/carbon": "^1.1.7",
+    "@testing-library/react": "^13.4.0",
     "@types/node": "^18.7.16",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
@@ -36,6 +39,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^8.0.1",
+    "jsdom": "^20.0.0",
     "lint-staged": "^13.0.3",
     "sass": "^1.54.5",
     "stylelint": "^14.11.0",
@@ -47,6 +51,7 @@
     "unocss": "^0.45.18",
     "unplugin-auto-import": "^0.11.2",
     "vite": "3.0.9",
-    "vite-plugin-pages": "^0.26.0"
+    "vite-plugin-pages": "^0.26.0",
+    "vitest": "^0.23.2"
   }
 }

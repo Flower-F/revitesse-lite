@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import react from '@vitejs/plugin-react'
 import path from 'path'
 import Unocss from 'unocss/vite'
@@ -27,4 +29,7 @@ export default defineConfig({
       ],
     }),
   ],
+  test: {
+    environment: 'jsdom',
+  },
 })
