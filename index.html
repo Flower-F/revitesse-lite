@@ -2,12 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>ReVitesse Lite</title>
+    <meta name="description" content="Opinionated Vite Starter Template">
   </head>
-  <body>
+  <body class="font-sans dark:text-white dark:bg-hex-121212">
     <div id="root"></div>
+    <script>
+      (function () {
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        const setting = localStorage.getItem('revitesse-dark-mod')
+          ? localStorage.getItem('revitesse-dark-mod') === 'true'
+            ? 'dark'
+            : 'light'
+          : 'auto'
+        if (setting === 'dark' || (prefersDark && setting !== 'light'))
+          document.documentElement.classList.toggle('dark', true)
+      })()
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

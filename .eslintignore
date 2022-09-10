@@ -1,5 +1,5 @@
 node_modules
 dist
 public
-
 *.d.ts
+__unconfig_vite.config.ts

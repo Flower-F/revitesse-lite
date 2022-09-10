@@ -2,6 +2,7 @@
   "recommendations": [
     "antfu.unocss",
     "dbaeumer.vscode-eslint",
-    "antfu.iconify"
+    "antfu.iconify",
+    "EditorConfig.EditorConfig"
   ]
 }
