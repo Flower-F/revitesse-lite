@@ -38,6 +38,7 @@
   "css.lint.unknownAtRules": "ignore",
   "cSpell.words": [
     "antfu",
+    "degit",
     "revitesse",
     "unocss",
     "vitesse",
