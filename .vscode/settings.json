@@ -6,7 +6,6 @@
     "source.fixAll.stylelint": true,
   },
   "prettier.enable": false,
-  "eslint.alwaysShowStatus": true,
   "eslint.validate": [
     "javascript",
     "typescript",
@@ -35,7 +34,6 @@
   "[scss]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint",
   },
-  "css.lint.unknownAtRules": "ignore",
   "cSpell.words": [
     "antfu",
     "degit",
