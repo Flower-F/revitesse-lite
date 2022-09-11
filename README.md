@@ -4,7 +4,7 @@ It is a copy of [Vitesse Lite](https://github.com/antfu/vitesse-lite), but it us
 
 ## Features
 
-- ⚡️ React + Vite
+- ⚡️ React + Vite + Pnpm + ESBuild
 - 🗂 [File based routing](https://github.com/hannoeru/vite-plugin-pages)
 - 🎨 [Unocss](https://github.com/unocss/unocss) + Sass
 - 😃 [Use icons from any icon sets with classes](https://github.com/unocss/unocss/tree/main/packages/preset-icons)

@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 const App = () => {
   return (
     <main font-sans p="x-4 y-10" text="center gray-700 dark:gray-200">
-      <Suspense fallback={<p>Loading...</p>}>
+      <Suspense fallback={<div>Loading...</div>}>
         {useRoutes(routes)}
       </Suspense>
       <Footer />
