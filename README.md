@@ -25,5 +25,6 @@ If you prefer to do it manually with the cleaner git history
 ```bash
 npx degit flower-f/revitesse-lite my-revitesse-app
 cd my-revitesse-app
+git init # To make sure that the husky can work well
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
