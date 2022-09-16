@@ -11,9 +11,8 @@ const options = defineConfig({
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
-    'plugin:promise/recommended',
   ],
-  plugins: ['jsx-a11y', 'react', 'react-hooks', 'simple-import-sort', 'promise'],
+  plugins: ['jsx-a11y', 'react', 'react-hooks', 'simple-import-sort'],
   rules: {
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
