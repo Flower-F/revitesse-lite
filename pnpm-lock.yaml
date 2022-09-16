@@ -20,7 +20,6 @@ specifiers:
   eslint: ^8.23.0
   eslint-define-config: ^1.7.0
   eslint-plugin-jsx-a11y: ^6.6.1
-  eslint-plugin-promise: ^6.0.1
   eslint-plugin-react: ^7.31.1
   eslint-plugin-react-hooks: ^4.6.0
   eslint-plugin-simple-import-sort: ^7.0.0
@@ -70,7 +69,6 @@ devDependencies:
   eslint: registry.npmmirror.com/eslint/8.23.0
   eslint-define-config: registry.npmmirror.com/eslint-define-config/1.7.0
   eslint-plugin-jsx-a11y: registry.npmmirror.com/eslint-plugin-jsx-a11y/6.6.1_eslint@8.23.0
-  eslint-plugin-promise: registry.npmmirror.com/eslint-plugin-promise/6.0.1_eslint@8.23.0
   eslint-plugin-react: registry.npmmirror.com/eslint-plugin-react/7.31.1_eslint@8.23.0
   eslint-plugin-react-hooks: registry.npmmirror.com/eslint-plugin-react-hooks/4.6.0_eslint@8.23.0
   eslint-plugin-simple-import-sort: registry.npmmirror.com/eslint-plugin-simple-import-sort/7.0.0_eslint@8.23.0
