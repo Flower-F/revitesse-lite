@@ -4,12 +4,12 @@ It is a copy of [Vitesse Lite](https://github.com/antfu/vitesse-lite), but it us
 
 ## Features
 
-- ⚡️ React + Vite + Pnpm + ESBuild
+- ⚡️ [React](https://reactjs.org/) + [Vite](https://vitejs.dev/) + [Pnpm](https://pnpm.io/) + [ESBuild](https://esbuild.github.io/)
 - 🗂 [File based routing](https://github.com/hannoeru/vite-plugin-pages)
-- 🎨 [Unocss](https://github.com/unocss/unocss) + Sass
+- 🎨 [Unocss](https://github.com/unocss/unocss) + [Sass](https://github.com/sass/sass)
 - 😃 [Use icons from any icon sets with classes](https://github.com/unocss/unocss/tree/main/packages/preset-icons)
-- 🦾 Eslint + Stylelint + Commitlint
-- ✅ [Vitest](https://github.com/vitest-dev/vitest)
+- 🦾 [Eslint](https://eslint.org/) + [Stylelint](https://stylelint.io/) + [Commitlint](https://commitlint.js.org/)
+- ✅ [Vitest](https://vitest.dev/)
 - ☁️ [Netlify](https://www.netlify.com/)
 
 ## Try it now!
@@ -27,4 +27,5 @@ npx degit flower-f/revitesse-lite my-revitesse-app
 cd my-revitesse-app
 git init # To make sure that the husky can work well
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+# If the UnoCSS extension doesn't work, restart the VSCode
 ```

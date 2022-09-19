@@ -6,6 +6,7 @@ specifiers:
   '@commitlint/config-conventional': ^17.1.0
   '@iconify-json/carbon': ^1.1.7
   '@testing-library/react': ^13.4.0
+  '@testing-library/react-hooks': ^8.0.1
   '@types/node': ^18.7.16
   '@types/react': ^18.0.17
   '@types/react-dom': ^18.0.6
@@ -56,6 +57,7 @@ devDependencies:
   '@commitlint/config-conventional': registry.npmmirror.com/@commitlint/config-conventional/17.1.0
   '@iconify-json/carbon': registry.npmmirror.com/@iconify-json/carbon/1.1.7
   '@testing-library/react': registry.npmmirror.com/@testing-library/react/13.4.0_biqbaboplfbrettd7655fr4n2y
+  '@testing-library/react-hooks': registry.npmmirror.com/@testing-library/react-hooks/8.0.1_zxljzmqdrxwnuenbkrz77w74uy
   '@types/node': registry.npmmirror.com/@types/node/18.7.16
   '@types/react': registry.npmmirror.com/@types/react/18.0.17
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/18.0.6
@@ -960,6 +962,32 @@ packages:
       dom-accessibility-api: registry.npmmirror.com/dom-accessibility-api/0.5.14
       lz-string: registry.npmmirror.com/lz-string/1.4.4
       pretty-format: registry.npmmirror.com/pretty-format/27.5.1
+    dev: true
+
+  registry.npmmirror.com/@testing-library/react-hooks/8.0.1_zxljzmqdrxwnuenbkrz77w74uy:
+    resolution: {integrity: sha512-Aqhl2IVmLt8IovEVarNDFuJDVWVvhnr9/GCU6UUnrYXwgDFF9h2L2o2P9KBni1AST5sT6riAyoukFLyjQUgD/g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@testing-library/react-hooks/-/react-hooks-8.0.1.tgz}
+    id: registry.npmmirror.com/@testing-library/react-hooks/8.0.1
+    name: '@testing-library/react-hooks'
+    version: 8.0.1
+    engines: {node: '>=12'}
+    peerDependencies:
+      '@types/react': ^16.9.0 || ^17.0.0
+      react: ^16.9.0 || ^17.0.0
+      react-dom: ^16.9.0 || ^17.0.0
+      react-test-renderer: ^16.9.0 || ^17.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      react-dom:
+        optional: true
+      react-test-renderer:
+        optional: true
+    dependencies:
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.18.9
+      '@types/react': registry.npmmirror.com/@types/react/18.0.17
+      react: registry.npmmirror.com/react/18.2.0
+      react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
+      react-error-boundary: registry.npmmirror.com/react-error-boundary/3.1.4_react@18.2.0
     dev: true
 
   registry.npmmirror.com/@testing-library/react/13.4.0_biqbaboplfbrettd7655fr4n2y:
@@ -5827,6 +5855,19 @@ packages:
       loose-envify: registry.npmmirror.com/loose-envify/1.4.0
       react: registry.npmmirror.com/react/18.2.0
       scheduler: registry.npmmirror.com/scheduler/0.23.0
+
+  registry.npmmirror.com/react-error-boundary/3.1.4_react@18.2.0:
+    resolution: {integrity: sha512-uM9uPzZJTF6wRQORmSrvOIgt4lJ9MC1sNgEOj2XGsDTRE4kmpWxg7ENK9EWNKJRMAOY9z0MuF4yIfl6gp4sotA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-error-boundary/-/react-error-boundary-3.1.4.tgz}
+    id: registry.npmmirror.com/react-error-boundary/3.1.4
+    name: react-error-boundary
+    version: 3.1.4
+    engines: {node: '>=10', npm: '>=6'}
+    peerDependencies:
+      react: '>=16.13.1'
+    dependencies:
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.18.9
+      react: registry.npmmirror.com/react/18.2.0
+    dev: true
 
   registry.npmmirror.com/react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-is/-/react-is-16.13.1.tgz}

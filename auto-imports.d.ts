@@ -109,6 +109,7 @@ declare global {
   const useToggle: typeof import('ahooks')['useToggle']
   const useTrackedEffect: typeof import('ahooks')['useTrackedEffect']
   const useTransition: typeof import('react')['useTransition']
+  const useTranslation: typeof import('react-i18next')['useTranslation']
   const useUnmount: typeof import('ahooks')['useUnmount']
   const useUnmountedRef: typeof import('ahooks')['useUnmountedRef']
   const useUpdate: typeof import('ahooks')['useUpdate']
