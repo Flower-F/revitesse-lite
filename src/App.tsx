@@ -1,9 +1,8 @@
 import { Suspense } from 'react'
 import { useRoutes } from 'react-router-dom'
 
+import Footer from '~/components/Footer'
 import routes from '~react-pages'
-
-import Footer from './components/Footer'
 
 const App = () => {
   return (

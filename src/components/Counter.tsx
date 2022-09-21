@@ -1,10 +1,10 @@
 import type { FC } from 'react'
 
-interface ICounterProps {
+interface CounterProps {
   initial: number
 }
 
-const Counter: FC<ICounterProps> = ({ initial }) => {
+const Counter: FC<CounterProps> = ({ initial }) => {
   const [count, { inc, dec }] = useCounter(initial)
 
   return (
