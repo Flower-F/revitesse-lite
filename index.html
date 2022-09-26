@@ -12,13 +12,14 @@
     <script>
       (function () {
         const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-        const setting = localStorage.getItem('revitesse-dark-mod')
-          ? localStorage.getItem('revitesse-dark-mod') === 'true'
+        const setting = localStorage.getItem('revitesse-dark-mode')
+          ? localStorage.getItem('revitesse-dark-mode') === 'true'
             ? 'dark'
             : 'light'
           : 'auto'
-        if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        if (setting === 'dark' || (prefersDark && setting !== 'light')) {
           document.documentElement.classList.toggle('dark', true)
+        }
       })()
     </script>
     <script type="module" src="/src/main.tsx"></script>

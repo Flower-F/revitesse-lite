@@ -21,10 +21,11 @@ const useDark = () => {
   const { isDarkMode: isDark, toggle: toggleDark } = useDarkStorage()
 
   useEffect(() => {
-    if (isDark)
+    if (isDark) {
       document.documentElement.classList.add('dark')
-    else
+    } else {
       document.documentElement.classList.remove('dark')
+    }
   }, [isDark])
 
   return {

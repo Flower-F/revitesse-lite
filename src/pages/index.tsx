@@ -5,13 +5,15 @@ const IndexPage = () => {
   const navigate = useNavigate()
 
   const handleKeyDownEnter = useMemoizedFn((e: KeyboardEvent) => {
-    if (e && e.code === 'Enter' && name)
+    if (e && e.code === 'Enter' && name) {
       navigate(`/hi/${encodeURIComponent(name)}`)
+    }
   })
 
   const handleClickEnter = useMemoizedFn(() => {
-    if (name)
+    if (name) {
       navigate(`/hi/${encodeURIComponent(name)}`)
+    }
   })
 
   return (

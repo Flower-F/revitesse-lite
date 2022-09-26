@@ -22,6 +22,8 @@ const options = defineConfig({
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/react-in-jsx-scope': 'off',
+    '@typescript-eslint/brace-style': ['error', '1tbs'],
+    'curly': ['error', 'all'],
   },
   settings: {
     react: {

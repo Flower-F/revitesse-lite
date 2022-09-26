@@ -65,6 +65,8 @@ export default defineConfig(({ mode }) => {
           drop_debugger: true,
         },
       },
+      polyfillModulePreload: true,
+      cssTarget: 'chrome61',
     }
   }
 

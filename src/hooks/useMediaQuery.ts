@@ -1,7 +1,8 @@
 const useMediaQuery = (query: string) => {
   const getMatches = (query: string): boolean => {
-    if (typeof window !== 'undefined')
+    if (typeof window !== 'undefined') {
       return window.matchMedia(query).matches
+    }
     return false
   }
 
