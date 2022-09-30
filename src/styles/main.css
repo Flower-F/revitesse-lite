@@ -6,6 +6,14 @@ body,
   margin: 0;
 }
 
+#root {
+  overflow-x: hidden;
+}
+
+html {
+  background-color: #fff;
+}
+
 html.dark {
-  background: #121212;
+  background-color: #121212;
 }

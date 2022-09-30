@@ -1,4 +1,4 @@
-const Hi = () => {
+const HiPage = () => {
   const navigate = useNavigate()
   const params = useParams()
 
@@ -20,4 +20,5 @@ const Hi = () => {
     </div>
   )
 }
-export default Hi
+
+export default HiPage
