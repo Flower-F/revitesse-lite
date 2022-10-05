@@ -1,4 +1,4 @@
-# ReVitesse Lite
+# Revitesse Lite
 
 It is a copy of [Vitesse Lite](https://github.com/antfu/vitesse-lite), but it uses React.
 
@@ -27,5 +27,5 @@ npx degit flower-f/revitesse-lite my-revitesse-app
 cd my-revitesse-app
 git init # To make sure that the husky can work well
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
-# If the UnoCSS extension doesn't work, restart the VSCode
+# If the UnoCSS extension doesn't work, close and restart the VSCode
 ```

@@ -3,3 +3,4 @@ dist
 public
 *.d.ts
 stats.html
+__unconfig_vite.config.ts

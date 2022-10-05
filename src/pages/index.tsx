@@ -21,7 +21,7 @@ const IndexPage = () => {
       <div i-carbon-campsite text-4xl inline-block hover:op75 />
       <p>
         <a rel="noreferrer" href="https://github.com/flower-f/revitesse-lite" target="_blank">
-          ReVitesse Lite
+          Revitesse Lite
         </a>
       </p>
 

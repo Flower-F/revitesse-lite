@@ -2,7 +2,7 @@
   "name": "revitesse-lite",
   "private": true,
   "version": "0.0.1",
-  "packageManager": "pnpm@7.11.0",
+  "packageManager": "pnpm@7.13.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -17,6 +17,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@unocss/reset": "^0.45.26",
     "ahooks": "^3.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -34,7 +35,6 @@
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
     "@unocss/preset-attributify": "^0.45.26",
-    "@unocss/reset": "^0.45.26",
     "@vitejs/plugin-legacy": "^2.2.0",
     "@vitejs/plugin-react": "^2.1.0",
     "@vitest/coverage-c8": "^0.23.4",
