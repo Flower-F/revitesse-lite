@@ -1,14 +1,14 @@
 /// <reference types="vitest" />
 
-import legacy from '@vitejs/plugin-legacy'
-import react from '@vitejs/plugin-react'
-import path from 'path'
-import { visualizer } from 'rollup-plugin-visualizer'
-import Unocss from 'unocss/vite'
-import AutoImport from 'unplugin-auto-import/vite'
-import type { UserConfigExport } from 'vite'
-import { defineConfig } from 'vite'
-import Pages from 'vite-plugin-pages'
+import legacy from '@vitejs/plugin-legacy';
+import react from '@vitejs/plugin-react';
+import path from 'path';
+import { visualizer } from 'rollup-plugin-visualizer';
+import Unocss from 'unocss/vite';
+import AutoImport from 'unplugin-auto-import/vite';
+import type { UserConfigExport } from 'vite';
+import { defineConfig } from 'vite';
+import Pages from 'vite-plugin-pages';
 
 export default defineConfig(({ mode }) => {
   const options: UserConfigExport = {
@@ -22,16 +22,9 @@ export default defineConfig(({ mode }) => {
       react(),
       Pages(),
       AutoImport({
-        imports: [
-          'react',
-          'react-router-dom',
-          'ahooks',
-          'react-i18next',
-        ],
+        imports: ['react', 'react-router-dom', 'ahooks', 'react-i18next'],
         dts: true,
-        dirs: [
-          './src/hooks',
-        ],
+        dirs: ['./src/hooks'],
       }),
       legacy({
         targets: ['ie >= 11'],
@@ -43,12 +36,12 @@ export default defineConfig(({ mode }) => {
     test: {
       environment: 'jsdom',
     },
-  }
+  };
 
   if (mode === 'production') {
     options.esbuild = {
       drop: ['console', 'debugger'],
-    }
+    };
     options.build = {
       minify: 'esbuild',
       target: 'ES2015',
@@ -67,8 +60,8 @@ export default defineConfig(({ mode }) => {
       },
       polyfillModulePreload: true,
       cssTarget: 'chrome61',
-    }
+    };
   }
 
-  return options
-})
+  return options;
+});

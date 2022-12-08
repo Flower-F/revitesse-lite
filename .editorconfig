@@ -8,6 +8,3 @@ tab_width = 2
 insert_final_newline = true
 end_of_line = lf
 charset = utf-8
-
-[*.md]
-trim_trailing_whitespace = false

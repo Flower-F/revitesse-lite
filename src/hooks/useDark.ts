@@ -1,37 +1,34 @@
 const useDarkStorage = (defaultValue?: boolean) => {
-  const isDarkOS = useMediaQuery('(prefers-color-scheme: dark)')
-  const [isDarkMode, setDarkMode] = useLocalStorageState(
-    'revitesse-dark-mode',
-    {
-      defaultValue: defaultValue ?? isDarkOS ?? false,
-    },
-  )
+  const isDarkOS = useMediaQuery('(prefers-color-scheme: dark)');
+  const [isDarkMode, setDarkMode] = useLocalStorageState('revitesse-dark-mode', {
+    defaultValue: defaultValue ?? isDarkOS ?? false,
+  });
 
   useUpdateEffect(() => {
-    setDarkMode(isDarkOS)
-  }, [isDarkOS])
+    setDarkMode(isDarkOS);
+  }, [isDarkOS]);
 
   return {
     isDarkMode,
-    toggle: () => setDarkMode(prev => !prev),
-  }
-}
+    toggle: () => setDarkMode((prev) => !prev),
+  };
+};
 
 const useDark = () => {
-  const { isDarkMode: isDark, toggle: toggleDark } = useDarkStorage()
+  const { isDarkMode: isDark, toggle: toggleDark } = useDarkStorage();
 
   useEffect(() => {
     if (isDark) {
-      document.documentElement.classList.add('dark')
+      document.documentElement.classList.add('dark');
     } else {
-      document.documentElement.classList.remove('dark')
+      document.documentElement.classList.remove('dark');
     }
-  }, [isDark])
+  }, [isDark]);
 
   return {
     isDark,
     toggleDark,
-  }
-}
+  };
+};
 
-export default useDark
+export default useDark;

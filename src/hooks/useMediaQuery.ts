@@ -1,30 +1,29 @@
 const useMediaQuery = (query: string) => {
   const getMatches = (query: string): boolean => {
     if (typeof window !== 'undefined') {
-      return window.matchMedia(query).matches
+      return window.matchMedia(query).matches;
     }
-    return false
-  }
+    return false;
+  };
 
-  const [matches, setMatches] = useState(getMatches(query))
+  const [matches, setMatches] = useState(getMatches(query));
 
   const handleChange = () => {
-    setMatches(getMatches(query))
-  }
+    setMatches(getMatches(query));
+  };
 
   useEffect(() => {
-    const matchMedia = window.matchMedia(query)
+    const matchMedia = window.matchMedia(query);
 
-    handleChange()
+    handleChange();
 
-    matchMedia.addEventListener('change', handleChange)
+    matchMedia.addEventListener('change', handleChange);
     return () => {
-      matchMedia.removeEventListener('change', handleChange)
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [query])
+      matchMedia.removeEventListener('change', handleChange);
+    };
+  }, [query]);
 
-  return matches
-}
+  return matches;
+};
 
-export default useMediaQuery
+export default useMediaQuery;
