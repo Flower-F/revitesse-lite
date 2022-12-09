@@ -1,7 +1,5 @@
-/// <reference types="vitest" />
-
 import legacy from '@vitejs/plugin-legacy';
-import react from '@vitejs/plugin-react';
+import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 import { visualizer } from 'rollup-plugin-visualizer';
 import Unocss from 'unocss/vite';
@@ -33,9 +31,6 @@ export default defineConfig(({ mode }) => {
         open: false,
       }),
     ],
-    test: {
-      environment: 'jsdom',
-    },
   };
 
   if (mode === 'production') {
