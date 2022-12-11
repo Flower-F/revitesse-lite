@@ -13,7 +13,6 @@
     "lint": "pnpm eslint && pnpm stylelint",
     "prepare": "husky install",
     "test": "vitest",
-    "test:watch": "vitest --watch",
     "coverage": "vitest run --coverage",
     "typecheck": "tsc"
   },
@@ -37,7 +36,7 @@
     "@typescript-eslint/parser": "^5.46.0",
     "@vitejs/plugin-legacy": "^3.0.0",
     "@vitejs/plugin-react-swc": "^3.0.0",
-    "@vitest/coverage-c8": "^0.23.4",
+    "@vitest/coverage-c8": "^0.25.7",
     "commitlint": "^17.3.0",
     "eslint": "^8.29.0",
     "eslint-config-prettier": "^8.5.0",
