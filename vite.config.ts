@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import legacy from '@vitejs/plugin-legacy';
 import react from '@vitejs/plugin-react-swc';
 import path from 'path';
@@ -31,6 +33,9 @@ export default defineConfig(({ mode }) => {
         open: false,
       }),
     ],
+    test: {
+      environment: 'jsdom',
+    },
   };
 
   if (mode === 'production') {
