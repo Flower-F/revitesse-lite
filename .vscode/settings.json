@@ -5,35 +5,16 @@
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true,
   },
-  "prettier.enable": false,
   "eslint.validate": [
     "javascript",
     "typescript",
     "javascriptreact",
     "typescriptreact",
   ],
-  "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  },
   "stylelint.validate": [
     "css",
     "scss",
   ],
-  "[css]": {
-    "editor.defaultFormatter": "stylelint.vscode-stylelint",
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "stylelint.vscode-stylelint",
-  },
   "cSpell.words": [
     "antfu",
     "degit",
