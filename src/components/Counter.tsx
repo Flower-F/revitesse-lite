@@ -10,10 +10,10 @@ const Counter: FC<CounterProps> = ({ initial }) => {
   return (
     <div>
       {count}
-      <button className="px-1" onClick={() => inc()}>
+      <button className='px-1' onClick={() => inc()}>
         +
       </button>
-      <button className="px-1" onClick={() => dec()}>
+      <button className='px-1' onClick={() => dec()}>
         -
       </button>
     </div>
