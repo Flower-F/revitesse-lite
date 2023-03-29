@@ -17,7 +17,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@unocss/reset": "0.49.1",
+    "@unocss/reset": "0.50.6",
     "ahooks": "^3.7.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
