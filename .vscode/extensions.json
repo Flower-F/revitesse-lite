@@ -5,7 +5,6 @@
     "antfu.iconify",
     "editorconfig.editorconfig",
     "stylelint.vscode-stylelint",
-    "antfu.goto-alias",
-    "ZixuanChen.vitest-explorer"
+    "antfu.goto-alias"
   ]
 }
