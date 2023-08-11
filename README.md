@@ -1,6 +1,6 @@
 # Revitesse Lite
 
-It is a copy of [Vitesse Lite](https://github.com/antfu/vitesse-lite), but it uses React.
+It is a copy of [Vitesse Lite](https://github.com/antfu/vitesse-lite), but it uses React. All the configs always kept fresh.
 
 ## Features
 
