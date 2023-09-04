@@ -16,7 +16,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@unocss/reset": "0.55.4",
+    "@unocss/reset": "0.55.6",
     "ahooks": "^3.7.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -25,9 +25,9 @@
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
-    "@iconify-json/carbon": "^1.1.20",
+    "@iconify-json/carbon": "^1.1.21",
     "@testing-library/react": "^14.0.0",
-    "@types/node": "^20.5.7",
+    "@types/node": "^20.5.9",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
@@ -52,10 +52,10 @@
     "stylelint": "^15.10.3",
     "stylelint-config-recess-order": "^4.3.0",
     "stylelint-config-standard": "^34.0.0",
-    "stylelint-config-standard-scss": "^10.0.0",
+    "stylelint-config-standard-scss": "^11.0.0",
     "terser": "^5.19.3",
     "typescript": "^5.2.2",
-    "unocss": "0.55.4",
+    "unocss": "0.55.6",
     "unplugin-auto-import": "^0.16.6",
     "vite": "4.4.9",
     "vite-plugin-pages": "^0.31.0",
