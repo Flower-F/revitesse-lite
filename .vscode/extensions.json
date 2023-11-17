@@ -2,7 +2,6 @@
   "recommendations": [
     "antfu.unocss",
     "dbaeumer.vscode-eslint",
-    "antfu.iconify",
     "editorconfig.editorconfig",
     "stylelint.vscode-stylelint",
     "antfu.goto-alias"
