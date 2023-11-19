@@ -1,0 +1,10 @@
+*.css
+*.scss
+*.d.ts
+node_modules
+dist
+coverage
+public
+*.d.ts
+stats.html
+*.md
