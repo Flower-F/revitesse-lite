@@ -1,4 +1,4 @@
-import { useCounter } from 'ahooks';
+import { useCounter } from 'react-use';
 
 interface CounterProps {
   initial: number;
