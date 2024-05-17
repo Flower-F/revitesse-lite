@@ -1,12 +1,18 @@
 /// <reference types="vitest" />
 
 import legacy from '@vitejs/plugin-legacy';
-import react from '@vitejs/plugin-react-swc';
+import react from '@vitejs/plugin-react';
 import path from 'path';
 import { visualizer } from 'rollup-plugin-visualizer';
 import type { UserConfigExport } from 'vite';
 import { defineConfig } from 'vite';
 import Pages from 'vite-plugin-pages';
+
+const ReactCompilerConfig = {
+  sources: (filename: string) => {
+    return filename.indexOf('src/') !== -1;
+  },
+};
 
 export default defineConfig(({ mode }) => {
   const options: UserConfigExport = {
@@ -16,7 +22,11 @@ export default defineConfig(({ mode }) => {
       },
     },
     plugins: [
-      react(),
+      react({
+        babel: {
+          plugins: [['babel-plugin-react-compiler', ReactCompilerConfig]],
+        },
+      }),
       Pages(),
       legacy({
         targets: ['ie >= 11'],
@@ -42,12 +52,6 @@ export default defineConfig(({ mode }) => {
           manualChunks: {
             'react-vendor': ['react', 'react-dom'],
           },
-        },
-      },
-      terserOptions: {
-        compress: {
-          drop_console: true,
-          drop_debugger: true,
         },
       },
       polyfillModulePreload: true,

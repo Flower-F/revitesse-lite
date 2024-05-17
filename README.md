@@ -8,7 +8,7 @@ It is a copy of [Vitesse Lite](https://github.com/antfu/vitesse-lite), but it us
 - 🗂 [File based routing](https://github.com/hannoeru/vite-plugin-pages)
 - 🎨 [TailwindCSS](https://tailwindcss.com/)
 - 😃 [Use icons from any icon sets with classes](https://iconify.design/docs/usage/css/tailwind/)
-- 🦾 [ESlint](https://eslint.org/) + [Prettier](https://prettier.io/) + [Commitlint](https://commitlint.js.org/)
+- 🦾 [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) + [CommitLint](https://commitlint.js.org/)
 - ✅ [Vitest](https://vitest.dev/)
 - ☁️ [Netlify](https://www.netlify.com/)
 
