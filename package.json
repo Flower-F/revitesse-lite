@@ -12,7 +12,6 @@
     "format": "npx prettier --write ./src",
     "prepare": "husky install",
     "test": "vitest",
-    "coverage": "vitest run --coverage",
     "typecheck": "tsc"
   },
   "dependencies": {
@@ -34,7 +33,6 @@
     "@typescript-eslint/parser": "^7.9.0",
     "@vitejs/plugin-legacy": "^5.4.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "@vitest/coverage-v8": "^1.6.0",
     "autoprefixer": "^10.4.19",
     "babel-plugin-react-compiler": "0.0.0-experimental-c23de8d-20240515",
     "commitlint": "^19.3.0",
