@@ -3,9 +3,19 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    "source.fixAll.stylelint": "explicit"
   },
-  "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact"],
-  "stylelint.validate": ["css", "scss"],
-  "cSpell.words": ["antfu", "degit", "revitesse", "unocss", "vitesse", "vitest"]
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "cSpell.words": [
+    "antfu",
+    "degit",
+    "revitesse",
+    "unocss",
+    "vitesse",
+    "vitest"
+  ]
 }

@@ -26,7 +26,6 @@ dist-ssr
 
 # Cache
 .eslintcache
-.stylelintcache
 
 # UnoCSS
 __unconfig_vite.config.ts
