@@ -28,9 +28,7 @@ export default defineConfig(({ mode }) => {
         },
       }),
       Pages(),
-      legacy({
-        targets: ['ie >= 11'],
-      }),
+      legacy(),
       visualizer({
         open: false,
       }),
@@ -52,6 +50,12 @@ export default defineConfig(({ mode }) => {
           manualChunks: {
             'react-vendor': ['react', 'react-dom'],
           },
+        },
+      },
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true,
         },
       },
       polyfillModulePreload: true,

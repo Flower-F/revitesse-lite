@@ -108,6 +108,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.3
         version: 3.4.3
+      terser:
+        specifier: ^5.31.0
+        version: 5.31.0
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
