@@ -27,9 +27,6 @@ dist-ssr
 # Cache
 .eslintcache
 
-# UnoCSS
-__unconfig_vite.config.ts
-
 # Vitest
 coverage
 

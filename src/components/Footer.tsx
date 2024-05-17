@@ -4,13 +4,13 @@ const Footer = () => {
   const { toggleDark } = useDark();
 
   return (
-    <nav className='text-xl mt-6 inline-flex gap-2'>
+    <nav className='mt-6 inline-flex gap-2 text-xl'>
       <button className='icon-btn' onClick={toggleDark}>
-        <div className='dark:i-carbon-moon i-carbon-sun' />
+        <div className='iconify carbon--sun dark:carbon--moon' />
       </button>
 
       <a
-        className='icon-btn i-carbon-logo-github'
+        className='icon-btn iconify carbon--logo-github'
         rel='noreferrer'
         href='https://github.com/flower-f/revitesse-lite'
         target='_blank'

@@ -1,8 +1,8 @@
 {
   "recommendations": [
-    "antfu.unocss",
     "dbaeumer.vscode-eslint",
     "editorconfig.editorconfig",
-    "antfu.goto-alias"
+    "antfu.goto-alias",
+    "bradlc.vscode-tailwindcss"
   ]
 }

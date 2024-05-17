@@ -1,11 +1,10 @@
 import { useCounter } from 'ahooks';
-import type { FC } from 'react';
 
 interface CounterProps {
   initial: number;
 }
 
-const Counter: FC<CounterProps> = ({ initial }) => {
+const Counter = ({ initial }: CounterProps) => {
   const [count, { inc, dec }] = useCounter(initial);
 
   return (

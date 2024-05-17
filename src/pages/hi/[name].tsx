@@ -6,14 +6,14 @@ const HiPage = () => {
 
   return (
     <div>
-      <div className='i-carbon-pedestrian text-4xl inline-block' />
+      <div className='iconify inline-block text-4xl carbon--pedestrian' />
       <p>Hi, {params.name}</p>
-      <p className='text-sm op50'>
+      <p className='text-sm opacity-50'>
         <em>Dynamic route!</em>
       </p>
 
       <div>
-        <button className='btn m-3 text-sm mt-8' onClick={() => navigate(-1)}>
+        <button className='btn m-3 mt-8 text-sm' onClick={() => navigate(-1)}>
           Back
         </button>
       </div>

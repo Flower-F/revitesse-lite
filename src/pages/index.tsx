@@ -19,7 +19,7 @@ const IndexPage = () => {
 
   return (
     <div>
-      <div className='i-carbon-campsite text-4xl inline-block hover:op75' />
+      <div className='iconify inline-block text-4xl carbon--campsite hover:opacity-75' />
       <p>
         <a rel='noreferrer' href='https://github.com/flower-f/revitesse-lite' target='_blank'>
           Revitesse Lite
@@ -27,7 +27,7 @@ const IndexPage = () => {
       </p>
 
       <p>
-        <em className='text-sm op75'>Opinionated Vite Starter Template</em>
+        <em className='text-sm opacity-75'>Opinionated Vite Starter Template</em>
       </p>
 
       <div className='py-4' />
@@ -37,7 +37,7 @@ const IndexPage = () => {
         placeholder="What's your name?"
         type='text'
         autoComplete='false'
-        className='px-4 py-2 w-250px text-center bg-transparent border border-rounded border-gray-200 border-dark:gray-700 outline-none'
+        className='border-dark:gray-700 w-[250px] rounded border border-solid border-gray-200 bg-transparent px-4 py-2 text-center outline-none'
         onKeyDown={handleKeyDownEnter}
         onChange={(e) => setName(e.target.value)}
       />

@@ -4,7 +4,6 @@ import legacy from '@vitejs/plugin-legacy';
 import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 import { visualizer } from 'rollup-plugin-visualizer';
-import Unocss from 'unocss/vite';
 import type { UserConfigExport } from 'vite';
 import { defineConfig } from 'vite';
 import Pages from 'vite-plugin-pages';
@@ -17,7 +16,6 @@ export default defineConfig(({ mode }) => {
       },
     },
     plugins: [
-      Unocss({}),
       react(),
       Pages(),
       legacy({
