@@ -1,20 +1,21 @@
-import type { KeyboardEvent } from 'react';
+import { useState, type KeyboardEvent } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const IndexPage = () => {
   const [name, setName] = useState('');
   const navigate = useNavigate();
 
-  const handleKeyDownEnter = useMemoizedFn((e: KeyboardEvent) => {
+  const handleKeyDownEnter = (e: KeyboardEvent) => {
     if (e && e.code === 'Enter' && name) {
       navigate(`/hi/${encodeURIComponent(name)}`);
     }
-  });
+  };
 
-  const handleClickEnter = useMemoizedFn(() => {
+  const handleClickEnter = () => {
     if (name) {
       navigate(`/hi/${encodeURIComponent(name)}`);
     }
-  });
+  };
 
   return (
     <div>

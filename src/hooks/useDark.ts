@@ -1,3 +1,7 @@
+import { useLocalStorageState, useUpdateEffect } from 'ahooks';
+import useMediaQuery from './useMediaQuery';
+import { useEffect } from 'react';
+
 const useDarkStorage = (defaultValue?: boolean) => {
   const isDarkOS = useMediaQuery('(prefers-color-scheme: dark)');
   const [isDarkMode, setDarkMode] = useLocalStorageState('revitesse-dark-mode', {

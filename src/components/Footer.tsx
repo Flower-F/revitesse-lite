@@ -1,3 +1,5 @@
+import useDark from '~/hooks/useDark';
+
 const Footer = () => {
   const { toggleDark } = useDark();
 

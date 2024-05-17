@@ -1,3 +1,4 @@
+import { useCounter } from 'ahooks';
 import type { FC } from 'react';
 
 interface CounterProps {

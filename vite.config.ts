@@ -5,7 +5,6 @@ import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 import { visualizer } from 'rollup-plugin-visualizer';
 import Unocss from 'unocss/vite';
-import AutoImport from 'unplugin-auto-import/vite';
 import type { UserConfigExport } from 'vite';
 import { defineConfig } from 'vite';
 import Pages from 'vite-plugin-pages';
@@ -21,11 +20,6 @@ export default defineConfig(({ mode }) => {
       Unocss({}),
       react(),
       Pages(),
-      AutoImport({
-        imports: ['react', 'react-router-dom', 'ahooks', 'react-i18next'],
-        dts: true,
-        dirs: ['./src/hooks'],
-      }),
       legacy({
         targets: ['ie >= 11'],
       }),

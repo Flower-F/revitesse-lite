@@ -1,3 +1,5 @@
+import { useNavigate, useParams } from 'react-router-dom';
+
 const HiPage = () => {
   const navigate = useNavigate();
   const params = useParams();

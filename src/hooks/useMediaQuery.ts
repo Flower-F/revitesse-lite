@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 const useMediaQuery = (query: string) => {
   const getMatches = (query: string): boolean => {
     if (typeof window !== 'undefined') {
