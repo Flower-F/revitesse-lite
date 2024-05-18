@@ -28,10 +28,17 @@ export default defineConfig(({ mode }) => {
           plugins: [['babel-plugin-react-compiler', ReactCompilerConfig]],
         },
       }),
-      legacy(),
-      visualizer({
-        open: false,
-      }),
+      ...(mode === 'production'
+        ? [
+            legacy({
+              targets: ['chrome >= 87', 'edge >= 88', 'firefox >= 78', 'safari >= 14'],
+              modernPolyfills: true,
+            }),
+            visualizer({
+              open: false,
+            }),
+          ]
+        : []),
     ],
     test: {
       environment: 'happy-dom',
@@ -45,7 +52,6 @@ export default defineConfig(({ mode }) => {
     };
     options.build = {
       minify: 'esbuild',
-      target: 'ES2015',
       rollupOptions: {
         output: {
           manualChunks(id) {
