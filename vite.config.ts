@@ -6,7 +6,6 @@ import path from 'path';
 import { visualizer } from 'rollup-plugin-visualizer';
 import type { UserConfigExport } from 'vite';
 import { defineConfig } from 'vite';
-import pages from 'vite-plugin-pages';
 
 const ReactCompilerConfig = {
   sources: (filename: string) => {
@@ -27,7 +26,6 @@ export default defineConfig(({ mode }) => {
           plugins: [['babel-plugin-react-compiler', ReactCompilerConfig]],
         },
       }),
-      pages(),
       legacy(),
       visualizer({
         open: false,

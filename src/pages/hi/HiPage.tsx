@@ -1,12 +1,12 @@
 import { useNavigate, useParams } from 'react-router-dom';
 
-const HiPage = () => {
+export const HiPage = () => {
   const navigate = useNavigate();
   const params = useParams();
 
   return (
     <div>
-      <div className='iconify inline-block text-4xl carbon--pedestrian' />
+      <div className='iconify inline-block text-4xl carbon--pedestrian'></div>
       <p>Hi, {params.name}</p>
       <p className='text-sm opacity-50'>
         <em>Dynamic route!</em>
@@ -20,5 +20,3 @@ const HiPage = () => {
     </div>
   );
 };
-
-export default HiPage;

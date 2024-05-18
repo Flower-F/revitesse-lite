@@ -1,7 +1,7 @@
 import { useState, type KeyboardEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const IndexPage = () => {
+export const IndexPage = () => {
   const [name, setName] = useState('');
   const navigate = useNavigate();
 
@@ -19,7 +19,7 @@ const IndexPage = () => {
 
   return (
     <div>
-      <div className='iconify inline-block text-4xl carbon--campsite hover:opacity-75' />
+      <div className='iconify inline-block text-4xl carbon--campsite hover:opacity-75'></div>
       <p>
         <a rel='noreferrer' href='https://github.com/flower-f/revitesse-lite' target='_blank'>
           Revitesse Lite
@@ -30,7 +30,7 @@ const IndexPage = () => {
         <em className='text-sm opacity-75'>Opinionated Vite Starter Template</em>
       </p>
 
-      <div className='py-4' />
+      <div className='py-4'></div>
 
       <input
         id='input'
@@ -50,5 +50,3 @@ const IndexPage = () => {
     </div>
   );
 };
-
-export default IndexPage;

@@ -15,6 +15,7 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "useUnknownInCatchVariables": false,
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
