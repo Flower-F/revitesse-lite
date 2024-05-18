@@ -47,16 +47,11 @@ export default defineConfig(({ mode }) => {
       target: 'ES2015',
       rollupOptions: {
         output: {
-          manualChunks: {
-            'lib-react': ['react', 'react-dom', 'scheduler'],
-            'lib-router': ['react-router', 'react-router-dom'],
+          manualChunks(id) {
+            if (id.includes('react')) {
+              return 'lib-react';
+            }
           },
-        },
-      },
-      terserOptions: {
-        compress: {
-          drop_console: true,
-          drop_debugger: true,
         },
       },
       polyfillModulePreload: true,
