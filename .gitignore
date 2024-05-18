@@ -27,8 +27,5 @@ dist-ssr
 # Cache
 .eslintcache
 
-# Vitest
-coverage
-
 # Visualizer
 stats.html
