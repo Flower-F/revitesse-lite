@@ -37,7 +37,7 @@ export const IndexPage = () => {
         placeholder="What's your name?"
         type='text'
         autoComplete='false'
-        className='border-dark:gray-700 w-[250px] rounded border border-solid border-gray-200 bg-transparent px-4 py-2 text-center outline-none'
+        className='w-[250px] rounded border border-solid border-gray-200 bg-transparent px-4 py-2 text-center outline-none dark:border-gray-700'
         onKeyDown={handleKeyDownEnter}
         onChange={(e) => setName(e.target.value)}
       />
