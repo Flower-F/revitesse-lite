@@ -4,7 +4,7 @@ interface CounterProps {
   initial: number;
 }
 
-const Counter = (props: CounterProps) => {
+export const Counter = (props: CounterProps) => {
   const { initial } = props;
   const [count, { inc, dec }] = useCounter(initial);
 
@@ -20,5 +20,3 @@ const Counter = (props: CounterProps) => {
     </div>
   );
 };
-
-export default Counter;

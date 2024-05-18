@@ -4,7 +4,7 @@ import legacy from '@vitejs/plugin-legacy';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import { visualizer } from 'rollup-plugin-visualizer';
-import type { UserConfigExport } from 'vite';
+import type { AliasOptions, UserConfigExport } from 'vite';
 import { defineConfig } from 'vite';
 
 const ReactCompilerConfig = {
@@ -13,12 +13,14 @@ const ReactCompilerConfig = {
   },
 };
 
+const AliasConfig: AliasOptions = {
+  '~/': `${path.resolve(__dirname, 'src')}/`,
+};
+
 export default defineConfig(({ mode }) => {
   const options: UserConfigExport = {
     resolve: {
-      alias: {
-        '~/': `${path.resolve(__dirname, 'src')}/`,
-      },
+      alias: AliasConfig,
     },
     plugins: [
       react({
@@ -33,6 +35,7 @@ export default defineConfig(({ mode }) => {
     ],
     test: {
       environment: 'happy-dom',
+      alias: AliasConfig,
     },
   };
 
@@ -47,7 +50,7 @@ export default defineConfig(({ mode }) => {
         output: {
           manualChunks(id) {
             if (id.includes('react')) {
-              return 'lib-react';
+              return 'react-vendor';
             }
           },
         },

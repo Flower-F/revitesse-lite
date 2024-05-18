@@ -15,7 +15,7 @@ const useDarkStorage = (defaultValue?: boolean) => {
   };
 };
 
-const useDark = () => {
+export const useDark = () => {
   const { isDarkMode: isDark, toggle: toggleDark } = useDarkStorage();
 
   useEffect(() => {
@@ -31,5 +31,3 @@ const useDark = () => {
     toggleDark,
   };
 };
-
-export default useDark;

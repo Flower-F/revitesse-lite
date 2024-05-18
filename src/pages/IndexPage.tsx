@@ -7,13 +7,13 @@ export const IndexPage = () => {
 
   const handleKeyDownEnter = (e: KeyboardEvent) => {
     if (e && e.code === 'Enter' && name) {
-      navigate(`/hi/${encodeURIComponent(name)}`);
+      navigate(`/hi/${name}`);
     }
   };
 
   const handleClickEnter = () => {
     if (name) {
-      navigate(`/hi/${encodeURIComponent(name)}`);
+      navigate(`/hi/${name}`);
     }
   };
 

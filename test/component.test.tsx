@@ -1,7 +1,6 @@
 import { cleanup, fireEvent, render } from '@testing-library/react';
 import { afterEach, describe, expect, it } from 'vitest';
-
-import Counter from '../src/components/Counter';
+import { Counter } from '~/components/Counter';
 
 describe('Counter', () => {
   afterEach(cleanup);
