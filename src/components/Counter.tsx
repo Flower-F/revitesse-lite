@@ -4,7 +4,8 @@ interface CounterProps {
   initial: number;
 }
 
-const Counter = ({ initial }: CounterProps) => {
+const Counter = (props: CounterProps) => {
+  const { initial } = props;
   const [count, { inc, dec }] = useCounter(initial);
 
   return (
