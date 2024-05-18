@@ -1,6 +1,6 @@
 import { useDark } from '~/hooks/useDark';
 
-const Footer = () => {
+export const Footer = () => {
   const { toggleDark } = useDark();
 
   return (
@@ -21,5 +21,3 @@ const Footer = () => {
     </nav>
   );
 };
-
-export default Footer;
