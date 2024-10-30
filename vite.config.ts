@@ -61,8 +61,10 @@ export default defineConfig(({ mode }) => {
           },
         },
       },
-      polyfillModulePreload: true,
       cssTarget: 'chrome61',
+      modulePreload: {
+        polyfill: true,
+      },
     };
   }
 
