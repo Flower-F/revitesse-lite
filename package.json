@@ -9,7 +9,7 @@
     "preview": "bun --bun vite preview",
     "lint": "bun --bun eslint --ext .js,.jsx,.ts,.tsx --cache --fix --quiet ./",
     "format": "bun --bun prettier --write ./src",
-    "prepare": "husky install",
+    "prepare": "husky",
     "test": "vitest",
     "typecheck": "tsc"
   },
