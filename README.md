@@ -1,6 +1,6 @@
-# Revitesse Lite
+# Vitesse React
 
-It is a copy of [Vitesse Lite](https://github.com/antfu/vitesse-lite), but it uses React. All the configs always keep fresh.
+It is a copy of [Vitesse](https://github.com/antfu/vitesse), but it uses React. All the configs always keep fresh.
 
 ## Features
 
@@ -16,16 +16,16 @@ It is a copy of [Vitesse Lite](https://github.com/antfu/vitesse-lite), but it us
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/flower-f/revitesse-lite/generate).
+[Create a repo from this template on GitHub](https://github.com/flower-f/vitesse-react/generate).
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit flower-f/revitesse-lite xxx
+npx degit flower-f/vitesse-react xxx
 cd xxx
 git init # To make sure that the husky can work well
 # If you use Linux system, you might need to execute 'chmod 777 ./.husky/*'
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+bun i # If you don't have bun installed, run: curl -fsSL https://bun.sh/install | bash
 ```

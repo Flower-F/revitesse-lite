@@ -21,8 +21,8 @@ export const IndexPage = () => {
     <div>
       <div className='iconify inline-block text-4xl carbon--campsite hover:opacity-75'></div>
       <p>
-        <a rel='noreferrer' href='https://github.com/flower-f/revitesse-lite' target='_blank'>
-          Revitesse Lite
+        <a rel='noreferrer' href='https://github.com/flower-f/vitesse-react' target='_blank'>
+          Vitesse React
         </a>
       </p>
 

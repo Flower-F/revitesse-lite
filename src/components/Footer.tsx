@@ -12,7 +12,7 @@ export const Footer = () => {
       <a
         className='icon-btn iconify carbon--logo-github'
         rel='noreferrer'
-        href='https://github.com/flower-f/revitesse-lite'
+        href='https://github.com/flower-f/vitesse-react'
         target='_blank'
         title='GitHub'
       >

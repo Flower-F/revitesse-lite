@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 const useDarkStorage = (defaultValue?: boolean) => {
   const isDarkOS = useMedia('(prefers-color-scheme: dark)');
-  const [isDarkMode, setDarkMode] = useLocalStorage('revitesse-dark-mode', defaultValue ?? isDarkOS ?? false);
+  const [isDarkMode, setDarkMode] = useLocalStorage('vitesse-react-dark-mode', defaultValue ?? isDarkOS ?? false);
 
   useUpdateEffect(() => {
     setDarkMode(isDarkOS);
