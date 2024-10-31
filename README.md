@@ -4,7 +4,7 @@ It is a copy of [Vitesse Lite](https://github.com/antfu/vitesse-lite), but it us
 
 ## Features
 
-- ⚡️ [React](https://reactjs.org/) + [Vite](https://vitejs.dev/) + [Pnpm](https://pnpm.io/) + [ESBuild](https://esbuild.github.io/)
+- ⚡️ [React](https://reactjs.org/) + [Vite](https://vitejs.dev/) + [Bun](https://bun.sh/)
 - 🗂 [React Router](https://reactrouter.com/en/main)
 - 😃 [React Use](https://streamich.github.io/react-use/)
 - 🎨 [TailwindCSS](https://tailwindcss.com/) + [Iconify](https://iconify.design/docs/usage/css/tailwind/)
